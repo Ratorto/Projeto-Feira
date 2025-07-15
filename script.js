@@ -45,7 +45,7 @@ fetch('conexao.php')
             Object.keys(dados2[0]).forEach(chave => {
                 const th = document.createElement('th');
                 th.textContent = chave === "id_irrigador" ? "Número do irrigador" :
-                    chave === "data_reabastecimento" ? "Último reabastecimento" :
+                    chave === "data_reabastecimento" ? "Reabastecimentos" :
                         chave;
                 th.style.padding = '8px';
                 th.style.backgroundColor = '#a5d6a7';

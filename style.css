@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f4f1;
+    color: #333;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #388E3C;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* separa botão e menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+#sidebar {
+    position: static; /* deixa de ser fixo */
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: none;
+}
+
+#sidebar ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+#sidebar ul li {
+    padding: 0;
+    border: none;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.2s, color 0.2s;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+#sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+
+main {
+    padding: 8rem 2rem 2rem;
+    transition: margin-left 0.3s ease;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #246127;
+    margin-bottom: 1rem;
+}
+
+h2
+{
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #ccc;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 2px;
+}
+
+.galeria-de-plantas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.galeria-de-plantas img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.galeria-de-plantas img:hover {
+    transform: scale(1.03);
+}
+
+img:hover
+{
+    transform: scale(1.03);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #81c784;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+tr:hover td {
+    background-color: #e8f5e9;
+    transition: background-color 0.3s ease;
+}
+
+.tabela-estilizada {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela-estilizada th,
+.tabela-estilizada td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.tabela-estilizada th {
+    background-color: #a5d6a7;
+    color: #333;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.tabela-estilizada tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabela-estilizada tr:hover {
+    background-color: #b3ffb9;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+    border-top: 4px solid #1B5E20;
+}
+footer p {
+    color: #C8E6C9;
+}
+
+footer a {
+    color: #C8E6C9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}

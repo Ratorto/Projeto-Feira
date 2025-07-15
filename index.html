@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador de Horta</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <br><br><br>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#descricao">Descrição do projeto</a></li>
+                <li><a href="#plantas">Plantas cultivadas</a></li>
+                <li><a href="#irrigadores">Irrigadores</a></li>
+                <li><a href="#poema">Poema</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    </header>
+
+    <main>
+        <h1 id="inicio">Projeto de horta sustentável</h1>
+        <p>Bem indo ao nosso site de gerenciamento da nossa horta</p>
+        <img src="Imagem 1 nova.jpg" alt="Uma imagem de uma horta com restos de plantas como adubo" class="img">
+        <hr>
+        <h2 id="descricao">Descrição do projeto</h2>
+        <p>Nosso projeto consistem em uma horta sustentavel com o uso de irrigadores automaticos que molham as plantas a
+            todo momento, permitindo-as crescer sem a necessidade serem regadas constantemente.</p>
+        <img src="Imagem 2.jpg"
+            alt="Uma imagem de uma horta com restos de plantas como adubo, só que mais afastada, mostrando os irrigadores automaticos fazendo seu trabalho"
+            class="img">
+        <hr>
+        <h2 id="plantas">Plantas cultivadas</h2>
+        <p>Em nossa horta tenhos diversas plantas de diferentes especies e agora mostraremos cada uma delas com imagens
+            que indicam os números das plantas e em baixo terá uma tabela com as informações sobre cada planta </p>
+        <div class="galeria-de-plantas">
+            <img src="Imagem 3.jpg" alt="">
+            <img src="Imagem 4.jpg" alt="">
+            <img src="Imagem 5.jpg" alt="">
+            <img src="Imagem 6.jpg" alt="">
+            <img src="Imagem 7.jpg" alt="">
+            <img src="Imagem 8.jpg" alt="">
+            <img src="Imagem 9.jpg" alt="">
+        </div>
+        <div id="tabela-container"></div>
+        <hr>
+        <h2 id="irrigadores">Irrigadores</h2>
+        <p>Qunado dizemos que "nossas hortas são irrigadas com irrigadores automaticos", a primeiro momento se pensa que
+            se trata de um sistema complexo, mas não é o nosso caso. Nosso irrigadores são muito mais simples, tão
+            simples que podem ser feitos por qual quer pessoa em casa, caso tenha interesse em faze-los clique nesse
+            link: <a
+                href="https://youtu.be/WzyPztAnMx4?si=IKTirMg3RLYF9MWq">https://youtu.be/WzyPztAnMx4?si=IKTirMg3RLYF9MWq</a>
+            <br>
+            Assim como nas plantas também teremos imagens dos irrigadores
+        </p>
+        <div class="galeria-de-plantas">
+            <img src="Imagem 10.jpg" alt="">
+            <img src="Imagem 11.jpg" alt="">
+        </div>
+        <div id="tabela-container2"></div>
+        <script src="script.js"></script>
+        <hr>
+        <h2 id="poema">Poema: </h2>
+        <p><i>"As plantações dançam ao vento,<br>
+                Verde é a cor que mais sinto,<br>
+                Na terra fértil, tudo cresce,<br>
+                E a natureza se pinta. <br><br>
+
+                O sol brilha forte e quente,<br>
+                A chuva cai suave e lenta,<br>
+                E as plantas se desenvolvem,<br>
+                Num ciclo que se apresenta."</i></p>
+    </main>
+    <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Gerenciador de Horta Sustentável. Todos os direitos reservados.</p>
+        <p>Feito pelos alunos da turma 202 do curso de internet.🌱</p>
+        <p>
+            <a href="#inicio">Voltar ao topo</a>
+        </p>
+    </div>
+</footer>
+
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const sidebar = document.getElementById("sidebar");
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
